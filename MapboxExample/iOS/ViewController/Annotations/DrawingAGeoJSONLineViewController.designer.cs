@@ -7,15 +7,13 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace MapboxExample.iOS
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("DrawingAGeoJSONLineViewController")]
+    partial class DrawingAGeoJSONLineViewController
     {
-        [Outlet]
-        UIKit.UIButton Button { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
         }

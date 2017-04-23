@@ -7,15 +7,13 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace MapboxExample.iOS
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("AnimatedLineViewController")]
+    partial class AnimatedLineViewController
     {
-        [Outlet]
-        UIKit.UIButton Button { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
         }

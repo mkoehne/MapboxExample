@@ -84,6 +84,9 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Naxam.Mapbox.iOS">
+      <HintPath>..\packages\Naxam.Mapbox.iOS.3.5.2-alpha\lib\Xamarin.iOS10\Naxam.Mapbox.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MapboxExample\MapboxExample.csproj">
@@ -94,9 +97,19 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\camera.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\camera.imageset\camera.pdf" />
+    <ImageAsset Include="Assets.xcassets\pisavector.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\pisavector.imageset\pisa.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="ViewController\" />
+    <Folder Include="ViewController\Style\" />
+    <Folder Include="ViewController\Annotations\" />
+    <Folder Include="Assets.xcassets\camera.imageset\" />
+    <Folder Include="Assets.xcassets\pisavector.imageset\" />
+    <Folder Include="ViewController\Runtime Styling\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -105,6 +118,7 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -113,6 +127,99 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="TableSource.cs" />
+    <Compile Include="ViewController\Style\CustomRasterStyleViewController.cs" />
+    <Compile Include="ViewController\Style\CustomRasterStyleViewController.designer.cs">
+      <DependentUpon>CustomRasterStyleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Style\CustomStyleViewController.cs" />
+    <Compile Include="ViewController\Style\CustomStyleViewController.designer.cs">
+      <DependentUpon>CustomStyleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Style\CustomVectorStyleViewController.cs" />
+    <Compile Include="ViewController\Style\CustomVectorStyleViewController.designer.cs">
+      <DependentUpon>CustomVectorStyleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Style\DefaultStylesViewController.cs" />
+    <Compile Include="ViewController\Style\DefaultStylesViewController.designer.cs">
+      <DependentUpon>DefaultStylesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Style\SatelliteStylesViewController.cs" />
+    <Compile Include="ViewController\Style\SatelliteStylesViewController.designer.cs">
+      <DependentUpon>SatelliteStylesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\AddingAMarkerViewController.cs" />
+    <Compile Include="ViewController\Annotations\AddingAMarkerViewController.designer.cs">
+      <DependentUpon>AddingAMarkerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\AnnotationViewsViewController.cs" />
+    <Compile Include="ViewController\Annotations\AnnotationViewsViewController.designer.cs">
+      <DependentUpon>AnnotationViewsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\CustomMarkerImageViewController.cs" />
+    <Compile Include="ViewController\Annotations\CustomMarkerImageViewController.designer.cs">
+      <DependentUpon>CustomMarkerImageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\AddMultipleAnnotationsViewController.cs" />
+    <Compile Include="ViewController\Annotations\AddMultipleAnnotationsViewController.designer.cs">
+      <DependentUpon>AddMultipleAnnotationsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\DrawingAGeoJSONLineViewController.cs" />
+    <Compile Include="ViewController\Annotations\DrawingAGeoJSONLineViewController.designer.cs">
+      <DependentUpon>DrawingAGeoJSONLineViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\DrawingAPolygonViewController.cs" />
+    <Compile Include="ViewController\Annotations\DrawingAPolygonViewController.designer.cs">
+      <DependentUpon>DrawingAPolygonViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\AnnotationModelsViewController.cs" />
+    <Compile Include="ViewController\Annotations\AnnotationModelsViewController.designer.cs">
+      <DependentUpon>AnnotationModelsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\DraggableAnnotationViewsViewController.cs" />
+    <Compile Include="ViewController\Annotations\DraggableAnnotationViewsViewController.designer.cs">
+      <DependentUpon>DraggableAnnotationViewsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Annotations\CustomAnnotationView.cs" />
+    <Compile Include="ViewController\Annotations\MyCustomPointAnnotation.cs" />
+    <Compile Include="ViewController\Annotations\CustomPointAnnotation.cs" />
+    <Compile Include="ViewController\Annotations\CustomPolyline.cs" />
+    <Compile Include="ViewController\Runtime Styling\AddAndToggleALayerViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\AddAndToggleALayerViewController.designer.cs">
+      <DependentUpon>AddAndToggleALayerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Runtime Styling\AnimatedLineViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\AnimatedLineViewController.designer.cs">
+      <DependentUpon>AnimatedLineViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Runtime Styling\FeatureSelectionViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\FeatureSelectionViewController.designer.cs">
+      <DependentUpon>FeatureSelectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Runtime Styling\AddAShapeCollectionFeatureViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\AddAShapeCollectionFeatureViewController.designer.cs">
+      <DependentUpon>AddAShapeCollectionFeatureViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Runtime Styling\CustomRasterSourceViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\CustomRasterSourceViewController.designer.cs">
+      <DependentUpon>CustomRasterSourceViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Runtime Styling\DynamicallyStyledLineViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\DynamicallyStyledLineViewController.designer.cs">
+      <DependentUpon>DynamicallyStyledLineViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Runtime Styling\DynamicallyStyledCirclesViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\DynamicallyStyledCirclesViewController.designer.cs">
+      <DependentUpon>DynamicallyStyledCirclesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController\Runtime Styling\DynamicallyStyledInteractivePointsViewController.cs" />
+    <Compile Include="ViewController\Runtime Styling\DynamicallyStyledInteractivePointsViewController.designer.cs">
+      <DependentUpon>DynamicallyStyledInteractivePointsViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\third_party_vector_style.json" />
+    <BundleResource Include="Resources\example.geojson" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

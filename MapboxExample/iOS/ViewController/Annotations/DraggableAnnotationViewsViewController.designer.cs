@@ -7,15 +7,13 @@
 using Foundation;
 using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace MapboxExample.iOS
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("DraggableAnnotationViewsViewController")]
+    partial class DraggableAnnotationViewsViewController
     {
-        [Outlet]
-        UIKit.UIButton Button { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
         }

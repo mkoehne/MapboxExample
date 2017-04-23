@@ -1,40 +1,424 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
-	<dependencies>
-		<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735" />
-	</dependencies>
-	<scenes>
-		<!--View Controller-->
-		<scene sceneID="tne-QT-ifu">
-			<objects>
-				<viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-					<layoutGuides>
-						<viewControllerLayoutGuide type="top" id="y3c-jy-aDJ" />
-						<viewControllerLayoutGuide type="bottom" id="wfy-db-euE" />
-					</layoutGuides>
-					<view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-						<rect key="frame" x="0.0" y="0.0" width="600" height="600" />
-						<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
-						<subviews>
-							<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx">
-								<rect key="frame" x="224" y="285" width="152" height="30" />
-								<state key="normal" title="Hello World, Click Me!">
-									<color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite" />
-								</state>
-							</button>
-						</subviews>
-						<color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite" />
-						<constraints>
-							<constraint firstItem="oBE-Ac-vcx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HiD-uS-i16" />
-							<constraint firstItem="oBE-Ac-vcx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YgX-7e-bMc" />
-						</constraints>
-					</view>
-					<connections>
-						<outlet property="Button" destination="oBE-Ac-vcx" id="OkX-0Z-gth" />
-					</connections>
-				</viewController>
-				<placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder" />
-			</objects>
-		</scene>
-	</scenes>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aPC-fD-aHv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <navigationItem key="navigationItem" id="z39-az-CGX"/>
+                    <connections/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="41.82909"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ggv-Q3-F0c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aPC-fD-aHv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gLB-ap-SCt">
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Y7a-jQ-Ox7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PwQ-pY-Vfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="42"/>
+        </scene>
+        <scene sceneID="6">
+            <objects>
+                <viewController id="7" sceneMemberID="viewController" customClass="DefaultStylesViewController" storyboardIdentifier="DefaultStylesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4"/>
+                        <viewControllerLayoutGuide type="bottom" id="5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="45"/>
+        </scene>
+        <scene sceneID="13">
+            <objects>
+                <viewController id="14" sceneMemberID="viewController" storyboardIdentifier="CustomStyleViewController" customClass="CustomStyleViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="11"/>
+                        <viewControllerLayoutGuide type="bottom" id="12"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="15">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342" y="45"/>
+        </scene>
+        <scene sceneID="36">
+            <objects>
+                <viewController id="37" sceneMemberID="viewController" storyboardIdentifier="SatelliteStylesViewController" customClass="SatelliteStylesViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="34"/>
+                        <viewControllerLayoutGuide type="bottom" id="35"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="38">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2996" y="43"/>
+        </scene>
+        <scene sceneID="43">
+            <objects>
+                <viewController id="44" sceneMemberID="viewController" customClass="CustomRasterStyleViewController" storyboardIdentifier="CustomRasterStyleViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="41"/>
+                        <viewControllerLayoutGuide type="bottom" id="42"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="45">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3669" y="43"/>
+        </scene>
+        <scene sceneID="50">
+            <objects>
+                <viewController id="51" sceneMemberID="viewController" customClass="CustomVectorStyleViewController" storyboardIdentifier="CustomVectorStyleViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="48"/>
+                        <viewControllerLayoutGuide type="bottom" id="49"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="52">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4304" y="41"/>
+        </scene>
+        <scene sceneID="69">
+            <objects>
+                <viewController id="70" sceneMemberID="viewController" customClass="AddingAMarkerViewController" storyboardIdentifier="AddingAMarkerViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="67"/>
+                        <viewControllerLayoutGuide type="bottom" id="68"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="71">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="711"/>
+        </scene>
+        <scene sceneID="76">
+            <objects>
+                <viewController id="77" sceneMemberID="viewController" customClass="AnnotationViewsViewController" storyboardIdentifier="AnnotationViewsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="74"/>
+                        <viewControllerLayoutGuide type="bottom" id="75"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="78">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2345" y="708"/>
+        </scene>
+        <scene sceneID="83">
+            <objects>
+                <viewController id="84" sceneMemberID="viewController" storyboardIdentifier="AddMultipleAnnotationsViewController" customClass="AddMultipleAnnotationsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="81"/>
+                        <viewControllerLayoutGuide type="bottom" id="82"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="85">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3004" y="704"/>
+        </scene>
+        <scene sceneID="90">
+            <objects>
+                <viewController id="91" sceneMemberID="viewController" storyboardIdentifier="CustomMarkerImageViewController" customClass="CustomMarkerImageViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="88"/>
+                        <viewControllerLayoutGuide type="bottom" id="89"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="92">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3673" y="709"/>
+        </scene>
+        <scene sceneID="97">
+            <objects>
+                <viewController id="98" sceneMemberID="viewController" storyboardIdentifier="DrawingAGeoJSONLineViewController" customClass="DrawingAGeoJSONLineViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="95"/>
+                        <viewControllerLayoutGuide type="bottom" id="96"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="99">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="100" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4312" y="706"/>
+        </scene>
+        <scene sceneID="104">
+            <objects>
+                <viewController id="105" sceneMemberID="viewController" storyboardIdentifier="DrawingAPolygonViewController" customClass="DrawingAPolygonViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="102"/>
+                        <viewControllerLayoutGuide type="bottom" id="103"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="106">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="107" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4971" y="710"/>
+        </scene>
+        <scene sceneID="111">
+            <objects>
+                <viewController id="112" sceneMemberID="viewController" storyboardIdentifier="AnnotationModelsViewController" customClass="AnnotationModelsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="109"/>
+                        <viewControllerLayoutGuide type="bottom" id="110"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="113">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="114" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5621" y="711"/>
+        </scene>
+        <scene sceneID="118">
+            <objects>
+                <viewController id="119" sceneMemberID="viewController" storyboardIdentifier="DraggableAnnotationViewsViewController" customClass="DraggableAnnotationViewsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="116"/>
+                        <viewControllerLayoutGuide type="bottom" id="117"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="120">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="121" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6256" y="711"/>
+        </scene>
+        <scene sceneID="147">
+            <objects>
+                <viewController id="148" sceneMemberID="viewController" storyboardIdentifier="AddAndToggleALayerViewController" customClass="AddAndToggleALayerViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="145"/>
+                        <viewControllerLayoutGuide type="bottom" id="146"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="149">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="150" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="1382"/>
+        </scene>
+        <scene sceneID="154">
+            <objects>
+                <viewController id="155" sceneMemberID="viewController" storyboardIdentifier="DynamicallyStyledLineViewController" customClass="DynamicallyStyledLineViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="152"/>
+                        <viewControllerLayoutGuide type="bottom" id="153"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="156">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="157" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2352" y="1380"/>
+        </scene>
+        <scene sceneID="161">
+            <objects>
+                <viewController id="162" sceneMemberID="viewController" storyboardIdentifier="AnimatedLineViewController" customClass="AnimatedLineViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="159"/>
+                        <viewControllerLayoutGuide type="bottom" id="160"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="163">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="164" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3011" y="1376"/>
+        </scene>
+        <scene sceneID="168">
+            <objects>
+                <viewController id="169" sceneMemberID="viewController" storyboardIdentifier="DynamicallyStyledCirclesViewController" customClass="DynamicallyStyledCirclesViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="166"/>
+                        <viewControllerLayoutGuide type="bottom" id="167"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="170">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="171" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3673" y="1373"/>
+        </scene>
+        <scene sceneID="175">
+            <objects>
+                <viewController id="176" sceneMemberID="viewController" storyboardIdentifier="DynamicallyStyledInteractivePointsViewController" customClass="DynamicallyStyledInteractivePointsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="173"/>
+                        <viewControllerLayoutGuide type="bottom" id="174"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="177">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="178" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4314" y="1370"/>
+        </scene>
+        <scene sceneID="182">
+            <objects>
+                <viewController id="183" sceneMemberID="viewController" storyboardIdentifier="FeatureSelectionViewController" customClass="FeatureSelectionViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="180"/>
+                        <viewControllerLayoutGuide type="bottom" id="181"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="184">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="185" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4978" y="1371"/>
+        </scene>
+        <scene sceneID="189">
+            <objects>
+                <viewController id="190" sceneMemberID="viewController" storyboardIdentifier="AddAShapeCollectionFeatureViewController" customClass="AddAShapeCollectionFeatureViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="187"/>
+                        <viewControllerLayoutGuide type="bottom" id="188"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="191">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="192" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5625" y="1375"/>
+        </scene>
+        <scene sceneID="196">
+            <objects>
+                <viewController id="197" sceneMemberID="viewController" storyboardIdentifier="CustomRasterSourceViewController" customClass="CustomRasterSourceViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="194"/>
+                        <viewControllerLayoutGuide type="bottom" id="195"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="198">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="199" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6264" y="1373"/>
+        </scene>
+    </scenes>
 </document>
